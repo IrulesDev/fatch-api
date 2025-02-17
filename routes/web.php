@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\alquranController;
 use App\Http\Controllers\homeController;
+use App\Http\Controllers\jadwalController;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
@@ -18,4 +19,6 @@ Route::get('getalquran', [alquranController::class, 'getalquran']);
 
 Route::get('/alquran',[alquranController::class, 'getalquran'])->name('alquran');
 
+Route::get('jadwal', [jadwalController::class, 'jadwal']);
+Route::get('/sholat',[jadwalController::class, 'jadwal'])->name('sholat');
 // });
